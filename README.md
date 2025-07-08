@@ -21,9 +21,10 @@ variables as the `mtcars` dataset:
 -   `type` (the type of the car, such as coupe, sedan, or SUV)
 -   `enginetype` (electric, hybrid, or petrol)
 
-The original data was compiled by Paul Musgrave in January 2025 and is
-mostly sourced from [YallaMotors Qatar](https://qatar.yallamotor.com/).
-See [Paul’s writeup of the background and purpose of the
+The original data was compiled by [Paul
+Musgrave](https://paulmusgrave.info/) in January 2025 and is mostly
+sourced from [YallaMotors Qatar](https://qatar.yallamotor.com/). See
+[Paul’s writeup of the background and purpose of the
 data](https://open.substack.com/pub/musgrave/p/introducing-the-qatar-cars-dataset);
 access his [original Stata data
 here](https://github.com/profmusgrave/qatarcars).

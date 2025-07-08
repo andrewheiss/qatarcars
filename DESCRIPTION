@@ -5,18 +5,18 @@ Version: 0.1.0
 Date: 2025-07-08
 Authors@R: c(
     person(
+      given = "Paul", 
+      family = "Musgrave",
+      email = "rpm47@georgetown.edu",
+      role = c("cre", "aut"),
+      comment = c(ORCID = "0000-0002-8984-4992")
+    ),
+    person(
       given = "Andrew", 
       family = "Heiss",
       email = "andrew@andrewheiss.com",
       role = c("aut"),
       comment = c(ORCID = "0000-0002-3948-3914")
-    ),
-    person(
-      given = "Paul", 
-      family = "Musgrave",
-      email = "rpm47@georgetown.edu",
-      role = c("cre"),
-      comment = c(ORCID = "0000-0002-8984-4992")
     )
   )
 Description: Fuel economy, size, performance, and price data for cars in Qatar in 2025. Mirrors many of the columns in mtcars, but uses (1) non-US-centric makes and models, (2) 2025 prices, and (3) metric measurements, making it more appropriate for use as an example dataset outside the United States.

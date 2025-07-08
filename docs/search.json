@@ -4,7 +4,7 @@
     "href": "CITATION.html",
     "title": "Citation",
     "section": "",
-    "text": "Citation\nTo cite package ‘qatarcars’ in publications use:\n\n  Heiss A (2025). _qatarcars: Qatar Cars Data_. R package version 0.1.0,\n  https://github.com/andrewheiss/qatarcars, &lt;https://andrewheiss.github.io/qatarcars/&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {qatarcars: Qatar Cars Data},\n    author = {Andrew Heiss},\n    year = {2025},\n    note = {R package version 0.1.0, \nhttps://github.com/andrewheiss/qatarcars},\n    url = {https://andrewheiss.github.io/qatarcars/},\n  }",
+    "text": "Citation\nTo cite package ‘qatarcars’ in publications use:\n\n  Musgrave P, Heiss A (2025). _qatarcars: Qatar Cars Data_. R package version 0.1.0,\n  https://github.com/andrewheiss/qatarcars, &lt;https://andrewheiss.github.io/qatarcars/&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {qatarcars: Qatar Cars Data},\n    author = {Paul Musgrave and Andrew Heiss},\n    year = {2025},\n    note = {R package version 0.1.0, https://github.com/andrewheiss/qatarcars},\n    url = {https://andrewheiss.github.io/qatarcars/},\n  }",
     "crumbs": [
       "Citation"
     ]

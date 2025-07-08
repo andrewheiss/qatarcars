@@ -9,6 +9,11 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   dev = "ragg_png"
 )
+
+# devtools::check()
+# devtools::install()
+# altdoc::render_docs()
+# altdoc::preview_docs()
 ```
 
 {qatarcars} provides a more internationally-focused, modern cars-based demonstration dataset. It mirrors many of the columns in `mtcars`, but uses (1) non-US-centric makes and models, (2) 2025 prices, and (3) metric measurements, making it more appropriate for use as an example dataset outside the United States. It includes almost exactly the same variables as the `mtcars` dataset:
@@ -25,7 +30,7 @@ knitr::opts_chunk$set(
 - `type` (the type of the car, such as coupe, sedan, or SUV)
 - `enginetype` (electric, hybrid, or petrol)
 
-The original data was compiled by Paul Musgrave in January 2025 and is mostly sourced from [YallaMotors Qatar](https://qatar.yallamotor.com/). See [Paul's writeup of the background and purpose of the data](https://open.substack.com/pub/musgrave/p/introducing-the-qatar-cars-dataset); access his [original Stata data here](https://github.com/profmusgrave/qatarcars).
+The original data was compiled by [Paul Musgrave](https://paulmusgrave.info/) in January 2025 and is mostly sourced from [YallaMotors Qatar](https://qatar.yallamotor.com/). See [Paul's writeup of the background and purpose of the data](https://open.substack.com/pub/musgrave/p/introducing-the-qatar-cars-dataset); access his [original Stata data here](https://github.com/profmusgrave/qatarcars).
 
 ## Installation
 
