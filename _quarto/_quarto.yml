@@ -1,0 +1,30 @@
+project:
+  type: website
+website:
+  title: qatarcars
+  bread-crumbs: false
+  navbar:
+    pinned: true
+    search: true
+    background: '#8B0E36'
+    right:
+      - icon: github
+        href: https://github.com/andrewheiss/qatarcars
+        aria-label: qatarcars GitHub
+  sidebar:
+    collapse-level: 2
+    contents:
+      - text: Home
+        file: index.qmd
+      - section: Reference
+        contents:
+          - text: qatarcars
+            file: man/qatarcars.qmd
+      - text: License
+        file: LICENSE.md
+      - text: Citation
+        file: CITATION.md
+format:
+  html:
+    theme: zephyr
+    number-sections: false

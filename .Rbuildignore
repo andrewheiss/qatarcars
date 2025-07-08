@@ -5,8 +5,11 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
-^README\.Rmd$
+^README\.qmd$
 ^vignettes
 ^\.github$
 ^cran-comments\.md$
 ^\.Rhistory$
+^\.nojekyll$
+^altdoc$
+^_quarto$

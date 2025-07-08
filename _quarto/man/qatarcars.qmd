@@ -1,0 +1,66 @@
+
+## Fuel economy, size, performance, and price data for cars in Qatar {.unnumbered}
+
+
+### Description
+
+Includes prices and other specifications taken from YallaMotors Qatar mostly 
+in January 2025.
+
+
+
+### Usage
+
+<pre><code class='language-R'>qatarcars
+</code></pre>
+
+
+### Format
+
+A tibble with 89 rows and 15 variables:
+
+
+<dl>
+<dt>origin</dt><dd>a factor denoting car country of origin
+</dd>
+<dt>make</dt><dd>a factor denoting car make
+</dd>
+<dt>model</dt><dd>a factor denoting car model
+</dd>
+<dt>length</dt><dd>a number denoting car length (meters)
+</dd>
+<dt>width</dt><dd>a number denoting car width (meters)
+</dd>
+<dt>height</dt><dd>a number denoting car height (meters)
+</dd>
+<dt>seating</dt><dd>a number denoting number of seats in car
+</dd>
+<dt>trunk</dt><dd>a number denoting volume of trunk (liters)
+</dd>
+<dt>economy</dt><dd>a number denoting car fuel economy (L/100km)
+</dd>
+<dt>horsepower</dt><dd>a number denoting car horsepower
+</dd>
+<dt>price</dt><dd>a number denoting car price (2025 Qatari riyals (QAR))
+</dd>
+<dt>mass</dt><dd>a number denoting car mass (kilograms)
+</dd>
+<dt>performance</dt><dd>a number denoting car performance (Time 0-100 km/h (seconds))
+</dd>
+<dt>type</dt><dd>a factor denoting car type
+</dd>
+<dt>enginetype</dt><dd>a factor denoting car engine type
+</dd>
+</dl>
+
+
+
+### Source
+
+<a href="https://github.com/profmusgrave/qatarcars">https://github.com/profmusgrave/qatarcars</a>
+
+<a href="https://open.substack.com/pub/musgrave/p/introducing-the-qatar-cars-dataset">https://open.substack.com/pub/musgrave/p/introducing-the-qatar-cars-dataset</a>
+
+<a href="https://qatar.yallamotor.com/">https://qatar.yallamotor.com/</a>
+
+

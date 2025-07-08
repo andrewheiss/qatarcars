@@ -1,0 +1,64 @@
+[
+  {
+    "objectID": "CITATION.html",
+    "href": "CITATION.html",
+    "title": "Citation",
+    "section": "",
+    "text": "Citation\nTo cite package ‘qatarcars’ in publications use:\n\n  Heiss A (2025). _qatarcars: Qatar Cars Data_. R package version 0.1.0,\n  https://github.com/andrewheiss/qatarcars, &lt;https://andrewheiss.github.io/qatarcars/&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {qatarcars: Qatar Cars Data},\n    author = {Andrew Heiss},\n    year = {2025},\n    note = {R package version 0.1.0, \nhttps://github.com/andrewheiss/qatarcars},\n    url = {https://andrewheiss.github.io/qatarcars/},\n  }",
+    "crumbs": [
+      "Citation"
+    ]
+  },
+  {
+    "objectID": "man/qatarcars.html",
+    "href": "man/qatarcars.html",
+    "title": "qatarcars",
+    "section": "",
+    "text": "Includes prices and other specifications taken from YallaMotors Qatar mostly in January 2025.\n\n\n\nqatarcars\n\n\n\n\nA tibble with 89 rows and 15 variables:\n\n\norigin\n\n\na factor denoting car country of origin\n\n\nmake\n\n\na factor denoting car make\n\n\nmodel\n\n\na factor denoting car model\n\n\nlength\n\n\na number denoting car length (meters)\n\n\nwidth\n\n\na number denoting car width (meters)\n\n\nheight\n\n\na number denoting car height (meters)\n\n\nseating\n\n\na number denoting number of seats in car\n\n\ntrunk\n\n\na number denoting volume of trunk (liters)\n\n\neconomy\n\n\na number denoting car fuel economy (L/100km)\n\n\nhorsepower\n\n\na number denoting car horsepower\n\n\nprice\n\n\na number denoting car price (2025 Qatari riyals (QAR))\n\n\nmass\n\n\na number denoting car mass (kilograms)\n\n\nperformance\n\n\na number denoting car performance (Time 0-100 km/h (seconds))\n\n\ntype\n\n\na factor denoting car type\n\n\nenginetype\n\n\na factor denoting car engine type\n\n\n\n\n\nhttps://github.com/profmusgrave/qatarcars\nhttps://open.substack.com/pub/musgrave/p/introducing-the-qatar-cars-dataset\nhttps://qatar.yallamotor.com/",
+    "crumbs": [
+      "Reference",
+      "qatarcars"
+    ]
+  },
+  {
+    "objectID": "man/qatarcars.html#fuel-economy-size-performance-and-price-data-for-cars-in-qatar",
+    "href": "man/qatarcars.html#fuel-economy-size-performance-and-price-data-for-cars-in-qatar",
+    "title": "qatarcars",
+    "section": "",
+    "text": "Includes prices and other specifications taken from YallaMotors Qatar mostly in January 2025.\n\n\n\nqatarcars\n\n\n\n\nA tibble with 89 rows and 15 variables:\n\n\norigin\n\n\na factor denoting car country of origin\n\n\nmake\n\n\na factor denoting car make\n\n\nmodel\n\n\na factor denoting car model\n\n\nlength\n\n\na number denoting car length (meters)\n\n\nwidth\n\n\na number denoting car width (meters)\n\n\nheight\n\n\na number denoting car height (meters)\n\n\nseating\n\n\na number denoting number of seats in car\n\n\ntrunk\n\n\na number denoting volume of trunk (liters)\n\n\neconomy\n\n\na number denoting car fuel economy (L/100km)\n\n\nhorsepower\n\n\na number denoting car horsepower\n\n\nprice\n\n\na number denoting car price (2025 Qatari riyals (QAR))\n\n\nmass\n\n\na number denoting car mass (kilograms)\n\n\nperformance\n\n\na number denoting car performance (Time 0-100 km/h (seconds))\n\n\ntype\n\n\na factor denoting car type\n\n\nenginetype\n\n\na factor denoting car engine type\n\n\n\n\n\nhttps://github.com/profmusgrave/qatarcars\nhttps://open.substack.com/pub/musgrave/p/introducing-the-qatar-cars-dataset\nhttps://qatar.yallamotor.com/",
+    "crumbs": [
+      "Reference",
+      "qatarcars"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Qatar Cars in R",
+    "section": "",
+    "text": "{qatarcars} provides a more internationally-focused, modern cars-based demonstration dataset. It mirrors many of the columns in mtcars, but uses (1) non-US-centric makes and models, (2) 2025 prices, and (3) metric measurements, making it more appropriate for use as an example dataset outside the United States. It includes almost exactly the same variables as the mtcars dataset:\n\norigin (the country associated with the car brand)\nmake (the brand of the car, such as Toyota or Land Rover)\nmodel (the specific type of car, such as Land Cruiser or Defender)\nlength, width, and height (all in meters)\ntrunk capacity (measured in liters)\nfuel economy (measured in liters per 100 km)\nperformance (time in seconds to accelerate from 0 to 100km/h)\nmass in kilograms\nprice in 2025 Qatari riyals\ntype (the type of the car, such as coupe, sedan, or SUV)\nenginetype (electric, hybrid, or petrol)\n\nThe original data was compiled by Paul Musgrave in January 2025 and is mostly sourced from YallaMotors Qatar. See Paul’s writeup of the background and purpose of the data; access his original Stata data here.\n\n\n{qatarcars} is not (yet?) on CRAN, but the development version can be installed with {remotes}:\nlibrary(remotes)\ninstall_github('andrewheiss/qatarcars')\n\n\n\nFuel efficiency gets worse as cars get heavier!\n\nlibrary(tidyverse)\nlibrary(qatarcars)\n\nggplot(qatarcars, aes(x = mass, y = economy)) +\n  geom_point() +\n  geom_smooth(method = \"lm\") +\n  labs(x = \"Mass (kg)\", y = \"Fuel economy (L/100km)\")\n\n\n\n\n\n\n\n\nSome of these cars are really expensive, so logging is helpful:\n\nggplot(qatarcars, aes(x = performance, y = price)) +\n  geom_smooth() +\n  geom_point(aes(color = type)) +\n  scale_y_log10(labels = scales::label_currency(prefix = \"QR \")) +\n  labs(x = \"Fuel economy (L/100km)\", y = \"Price\")",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "Qatar Cars in R",
+    "section": "",
+    "text": "{qatarcars} is not (yet?) on CRAN, but the development version can be installed with {remotes}:\nlibrary(remotes)\ninstall_github('andrewheiss/qatarcars')",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "Qatar Cars in R",
+    "section": "",
+    "text": "Fuel efficiency gets worse as cars get heavier!\n\nlibrary(tidyverse)\nlibrary(qatarcars)\n\nggplot(qatarcars, aes(x = mass, y = economy)) +\n  geom_point() +\n  geom_smooth(method = \"lm\") +\n  labs(x = \"Mass (kg)\", y = \"Fuel economy (L/100km)\")\n\n\n\n\n\n\n\n\nSome of these cars are really expensive, so logging is helpful:\n\nggplot(qatarcars, aes(x = performance, y = price)) +\n  geom_smooth() +\n  geom_point(aes(color = type)) +\n  scale_y_log10(labels = scales::label_currency(prefix = \"QR \")) +\n  labs(x = \"Fuel economy (L/100km)\", y = \"Price\")",
+    "crumbs": [
+      "Home"
+    ]
+  }
+]

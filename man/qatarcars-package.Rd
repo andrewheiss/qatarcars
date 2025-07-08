@@ -3,12 +3,26 @@
 \docType{package}
 \name{qatarcars-package}
 \alias{qatarcars-package}
-\title{qatarcars: What the Package Does (Title Case)}
+\title{qatarcars: Qatar Cars Data}
 \description{
-More about what it does (maybe more than one line). Continuation lines should be indented.
+Fuel economy, size, performance, and price data for cars in Qatar in 2025. Mirrors many of the columns in mtcars, but uses (1) non-US-centric makes and models, (2) 2025 prices, and (3) metric measurements, making it more appropriate for use as an example dataset outside the United States.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://andrewheiss.github.io/qatarcars/}
+  \item \url{https://github.com/andrewheiss/qatarcars}
+  \item Report bugs at \url{https://github.com/andrewheiss/qatarcars/issues}
+}
+
 }
 \author{
-\strong{Maintainer}: Jane Doe \email{jane@example.com}
+\strong{Maintainer}: Paul Musgrave \email{rpm47@georgetown.edu} (\href{https://orcid.org/0000-0002-8984-4992}{ORCID})
+
+Authors:
+\itemize{
+  \item Andrew Heiss \email{andrew@andrewheiss.com} (\href{https://orcid.org/0000-0002-3948-3914}{ORCID})
+}
 
 }
 \keyword{internal}
