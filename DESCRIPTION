@@ -8,14 +8,14 @@ Authors@R: c(
       given = "Paul", 
       family = "Musgrave",
       email = "rpm47@georgetown.edu",
-      role = c("cre", "aut"),
+      role = c("aut"),
       comment = c(ORCID = "0000-0002-8984-4992")
     ),
     person(
       given = "Andrew", 
       family = "Heiss",
       email = "andrew@andrewheiss.com",
-      role = c("aut"),
+      role = c("cre", "aut"),
       comment = c(ORCID = "0000-0002-3948-3914")
     )
   )

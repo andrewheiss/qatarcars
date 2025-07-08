@@ -17,11 +17,11 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Paul Musgrave \email{rpm47@georgetown.edu} (\href{https://orcid.org/0000-0002-8984-4992}{ORCID})
+\strong{Maintainer}: Andrew Heiss \email{andrew@andrewheiss.com} (\href{https://orcid.org/0000-0002-3948-3914}{ORCID})
 
 Authors:
 \itemize{
-  \item Andrew Heiss \email{andrew@andrewheiss.com} (\href{https://orcid.org/0000-0002-3948-3914}{ORCID})
+  \item Paul Musgrave \email{rpm47@georgetown.edu} (\href{https://orcid.org/0000-0002-8984-4992}{ORCID})
 }
 
 }
